@@ -20,4 +20,4 @@ RESULTS LIST FILE: Once the array of Gifs data is passed down from the main file
 something with the data. In my example, I set up the .map to create a Result component for each Gif. Doing that alone doesn't get a displayed list of Gifs. I need to pass down a
 single Gif as a prop to the Result component and create the HTML structure do display the data.
 
-RESULT FILE: In the Result file is where the magic happens. This file is solely for a single Gif. Here we can use our interface that we created to dip into the data and pull what we need. We use JSX to dispaly the data wrapped in HTML tags. Once the data is placed in the tags I used CSS to manipulate the tags like a normal HTML file.
+RESULT FILE: In the Result file is where the magic happens. This file is solely for creating the layout of a single Gif. Here we can use our interface that we created to dip into the data and pull what we need. We use JSX to dispaly the data wrapped in HTML tags like how you would normally fill HTML tags. Once the data is placed in the tags I used CSS to add styles like normal.
