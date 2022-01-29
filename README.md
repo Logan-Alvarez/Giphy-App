@@ -1,46 +1,16 @@
-# Getting Started with Create React App
+The Giphy app project was created to learn how to pull data from an API and how to break it down in React. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Contributions: Logan A.
 
-## Available Scripts
+The Giphy app was a really fun and eye opening experience for me because I got a taste of what React is capable of. This app allows users to search the Giphy API for their
+favorite Gifs. ( Mine are the Kermit the frog gifs. What about you? )
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+FETCH REQUEST: The flow of data starts with our fetch request. In the service file I set up a fetch to get all the trending gifs to display first. It made sense to do this since
+we want something to be displayed to our user when they first launch the app. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+MODEL: I set up an interface to allow easy access to calling the data in other files. I made sure to model the interface how the API is structured, but only with the data I
+need to use. 
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+MAIN FILE: In the main is where we want to handle the data first coming in. To do this, I set up a hook with a variable with the type of 
