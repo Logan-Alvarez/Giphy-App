@@ -13,4 +13,11 @@ we want something to be displayed to our user when they first launch the app.
 MODEL: I set up an interface to allow easy access to calling the data in other files. I made sure to model the interface how the API is structured, but only with the data I
 need to use. 
 
-MAIN FILE: In the main is where we want to handle the data first coming in. To do this, I set up a hook with a variable with the type of 
+MAIN FILE: In the main is where we want to handle the data first coming in. To do this, I set up a hook with a variable with the type of Giphy[] - this means the variable is an
+array of Gifs. Now that I have that information I need to pass that array down as a prop to the Results list file.
+
+RESULTS LIST FILE: Once the array of Gifs data is passed down from the main file I'm apple to use .map. The .map method allows us to go through each single Gif in the array and do
+something with the data. In my example, I set up the .map to create a Result component for each Gif. Doing that alone doesn't get a displayed list of Gifs. I need to pass down a
+single Gif as a prop to the Result component and create the HTML structure do display the data.
+
+RESULT FILE: In the Result file is where the magic happens. This file is solely for a single Gif. Here we can use our interface that we created to dip into the data and pull what we need. We use JSX to dispaly the data wrapped in HTML tags. Once the data is placed in the tags I used CSS to manipulate the tags like a normal HTML file.
