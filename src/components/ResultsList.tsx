@@ -9,7 +9,6 @@ export interface Props {
 export default function ResultsList({ gifs }: Props) {
   return (
     <div className="ResultsList">
-      <h2>Results</h2>
       {gifs.map((gif, i) => (
         <Result key={i} gif={gif} />
       ))}

@@ -62,10 +62,34 @@ img {
   border: 1px solid #2f3336;
 }
 
-.ResultsList h2 {
+.results {
+  margin-bottom: 0;
   color: white;
+  font-size: xx-large;
 }
 
 @media screen and (min-width: 768px) {
- 
+  .ResultsList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .Results {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .ResultsList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .Results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+  }
 }

@@ -23,6 +23,7 @@ export default function Main() {
   return (
     <div>
       <SearchForm onSubmit={handleGiphySearchForm} />
+      <h2 className="results">Results</h2>
       <ResultsList gifs={gifs} />
     </div>
   );
